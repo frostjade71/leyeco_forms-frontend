@@ -24,9 +24,6 @@ This frontend-only version was created to:
 1. Open `index.html` in a web browser
 2. Navigate through the pages using the menu
 3. Explore the form homepages for Complaints and Requisition systems
-4. Note that submission forms show a notice about being frontend-only
-
-> **Tip**: You can also access the site by opening the file directly in your browser or using a local web server.
 
 ## 📸 Screenshots
 
