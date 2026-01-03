@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LEYECO III Forms Management System - Contact Us">
+    <meta name="keywords" content="LEYECO III, electric cooperative, contact">
+    <meta name="author" content="LEYECO III">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/leyecoicon_fav.svg">
+    
+    <title>Contact Us - LEYECO III Forms Management System</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Page Loader Stylesheet -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+    
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="assets/css/contact.css">
+    
+    <!-- Global Page Loader Script -->
+    <script src="assets/js/page-loader.js"></script>
+</head>
+<body>
+    <!-- Page Loader Overlay -->
+    <div id="page-loader">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo/Brand -->
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/images/logoL3iii.webp" alt="LEYECO III Logo" class="logo-icon">
+                <img src="assets/images/logo_leyeco3.webp" alt="LEYECO III" class="logo-text">
+            </a>
+            
+            <!-- Mobile Toggle -->
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <div class="navbar-menu">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="index.html">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="active">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-primary" onclick="alert('Staff login is not available in this frontend-only version.'); return false;">
+                            <i class="fas fa-user-lock"></i> Staff Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content Wrapper -->
+    <main class="main-content">
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <div class="hero-icon">
+            <i class="fas fa-envelope"></i>
+        </div>
+        <h1>Contact Us</h1>
+        <p class="subtitle">We're here to help and answer any questions you might have</p>
+    </div>
+</section>
+
+<!-- Contact Information Section -->
+<section class="contact-info-section">
+    <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Reach out to us through any of the following channels</p>
+        
+        <div class="contact-grid">
+            <!-- Address -->
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Office Address</h3>
+                <p>Brgy. San Roque, Tunga, Leyte</p>
+                <p>Philippines</p>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3>Hotline Numbers</h3>
+                <p><strong>SMART:</strong> <a href="tel:+639285104998">+639285104998</a></p>
+                <p><strong>GLOBE:</strong> <a href="tel:+639173049794">+639173049794</a></p>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Address</h3>
+                <p><a href="mailto:leyteiiie@yahoo.com">leyteiiie@yahoo.com</a></p>
+            </div>
+
+            <!-- Website -->
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Website</h3>
+                <p><a href="https://www.leyeco3.com/" target="_blank">www.leyeco3.com</a></p>
+            </div>
+
+            <!-- Office Hours -->
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Office Hours</h3>
+                <p>Monday - Friday</p>
+                <p>8:00 AM - 5:00 PM</p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/LEYECOIII/" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.leyeco3.com/" target="_blank" title="Website">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section" id="map-section">
+    <div class="container">
+        <h2 class="section-title">Find Us</h2>
+        <p class="section-subtitle">Visit our office at Brgy. San Roque, Tunga, Leyte</p>
+        
+        <div class="map-container">
+            <div id="contact-map" style="height: 350px; width: 100%; border-radius: 8px;"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Links Section -->
+<section class="quick-links-section">
+    <div class="container">
+        <h2 class="section-title">Quick Actions</h2>
+        <p class="section-subtitle">Need to submit a form or request?</p>
+        
+        <div class="quick-links-grid">
+            <!-- 1. Complaints -->
+            <a href="forms/complaints/homepage.html" class="quick-link-card">
+                <div class="quick-link-icon">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <h3>File Complaint</h3>
+                <p>Report service issues</p>
+            </a>
+
+            <!-- 2. Requisition -->
+            <a href="forms/requisition/homepage.html" class="quick-link-card">
+                <div class="quick-link-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3>Requisition</h3>
+                <p>Request materials</p>
+            </a>
+
+            <!-- 3. Reconnection -->
+            <a href="#" class="quick-link-card" onclick="alert('This form is not available in the frontend-only version.'); return false;">
+                <div class="quick-link-icon">
+                    <i class="fas fa-plug"></i>
+                </div>
+                <h3>Reconnection</h3>
+                <p>Request reconnection service</p>
+            </a>
+
+            <!-- 4. Meter Replacement -->
+            <a href="#" class="quick-link-card" onclick="alert('This form is not available in the frontend-only version.'); return false;">
+                <div class="quick-link-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Meter Replacement</h3>
+                <p>Request meter replacement</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section" id="faq-section">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle"></i> How do I submit a service request?</h3>
+                <p>You can submit a service request by clicking on the appropriate form from our homepage or the Quick Actions section above. Fill out the required information and submit the form online.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle"></i> How long does it take to process my request?</h3>
+                <p>Processing time varies depending on the type of request. Typically, requests are processed within 24-48 hours. You will receive a reference number to track your request status.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle"></i> What are your office hours?</h3>
+                <p>Our office is open Monday through Friday, from 8:00 AM to 5:00 PM. We are closed on weekends and public holidays.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle"></i> How can I report a power outage?</h3>
+                <p>You can report power outages by calling our hotline numbers: SMART +639285104998 or GLOBE +639173049794. You can also file a complaint through our online form.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo" style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
+                        <img src="assets/images/logoL3iii.webp" alt="LEYECO III Logo" style="height: 30px; width: auto;">
+                        <h4 style="margin: 0;">LEYECO III</h4>
+                    </div>
+                    <p>Leyte III Electric Cooperative, Inc.</p>
+                    <p><i>Lighting Houses, Lighting Homes, Lighting Hopes</i></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#select-forms">Select Forms</a></li>
+                        <li><a href="contact.html#map-section">Find Us</a></li>
+                        <li><a href="contact.html#faq-section">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Brgy. San Roque, Tunga, Leyte</p>
+                    <p><i class="fas fa-phone"></i> SMART: +639285104998</p>
+                    <p><i class="fas fa-phone"></i> GLOBE: +639173049794</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:leyteiiie@yahoo.com" style="color: var(--light-gray);">leyteiiie@yahoo.com</a></p>
+                    <p><i class="fas fa-globe"></i> <a href="https://www.leyeco3.com/" target="_blank" style="color: var(--light-gray);">www.leyeco3.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/page-loader.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="assets/js/contact-map.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LEYECO III Forms Management System - Submit and manage your service requests online"
+    />
+    <meta
+      name="keywords"
+      content="LEYECO III, electric cooperative, forms, service request, reconnection, complaints, meter replacement"
+    />
+    <meta name="author" content="LEYECO III" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/images/leyecoicon_fav.svg"
+    />
+
+    <title>Home - LEYECO III Forms Management System</title>
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Page Loader Stylesheet -->
+    <link rel="stylesheet" href="assets/css/loader.css" />
+
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="assets/css/homepage.css" />
+
+    <!-- Global Page Loader Script -->
+    <script src="assets/js/page-loader.js"></script>
+  </head>
+  <body>
+    <!-- Page Loader Overlay -->
+    <div id="page-loader">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <!-- Logo/Brand -->
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="assets/images/logoL3iii.webp"
+            alt="LEYECO III Logo"
+            class="logo-icon"
+          />
+          <img
+            src="assets/images/logo_leyeco3.webp"
+            alt="LEYECO III"
+            class="logo-text"
+          />
+        </a>
+
+        <!-- Mobile Toggle -->
+        <div class="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="navbar-menu">
+          <ul class="navbar-nav">
+            <li>
+              <a href="index.html" class="active">
+                <i class="fas fa-home"></i> Home
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <i class="fas fa-info-circle"></i> About
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <i class="fas fa-envelope"></i> Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="btn btn-primary"
+                onclick="alert('Staff login is not available in this frontend-only version.'); return false;"
+              >
+                <i class="fas fa-user-lock"></i> Staff Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-content">
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 20px"
+      >
+        <main class="main">
+          <!-- Hero Section -->
+          <section class="hero">
+            <div class="hero-branding">
+              <img
+                src="assets/images/Leyecoicon.png"
+                alt="LEYECO III Logo"
+                class="hero-logo"
+              />
+              <div class="hero-text">
+                <h2>LEYECO III</h2>
+                <p class="hero-subtitle">Forms Management System</p>
+              </div>
+            </div>
+            <p class="hero-description">
+              Welcome to the LEYECO III online forms portal. Select the
+              appropriate form below to submit your request. All submissions are
+              processed securely and you will receive a confirmation upon
+              successful submission.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#select-forms" class="btn btn-primary btn-large">
+                📋 Select Forms
+              </a>
+              <a
+                href="#instructions-section"
+                class="btn btn-secondary btn-large"
+              >
+                📖 How It Works
+              </a>
+            </div>
+          </section>
+
+          <!-- Forms Selection Section -->
+          <section id="select-forms" class="forms-selection">
+            <h3>Select a Form</h3>
+            <p class="section-description">
+              Choose the form that matches your service request
+            </p>
+
+            <div class="forms-grid">
+              <div class="form-card">
+                <div class="form-card-icon">
+                  <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <h4>Complaints Form</h4>
+                <p>Report service issues or file complaints</p>
+                <a
+                  href="forms/complaints/homepage.html"
+                  class="btn btn-primary"
+                >
+                  File Complaint <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <div class="form-card">
+                <div class="form-card-icon">
+                  <i class="fas fa-file-alt"></i>
+                </div>
+                <h4>Requisition Form</h4>
+                <p>Request for requisition of materials</p>
+                <a
+                  href="forms/requisition/homepage.html"
+                  class="btn btn-primary"
+                >
+                  Request Requisition <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <div class="form-card">
+                <div class="form-card-icon">
+                  <i class="fas fa-file-text"></i>
+                </div>
+                <h4>Service Request Form</h4>
+                <p>Submit new service requests and connection applications</p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="alert('This form is not available in the frontend-only version.'); return false;"
+                >
+                  Start Request <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <div class="form-card">
+                <div class="form-card-icon">
+                  <i class="fas fa-plug"></i>
+                </div>
+                <h4>Reconnection Form</h4>
+                <p>Request reconnection of electric service</p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="alert('This form is not available in the frontend-only version.'); return false;"
+                >
+                  Request Reconnection <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <div class="form-card">
+                <div class="form-card-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <h4>Meter Replacement Form</h4>
+                <p>Request electric meter replacement or upgrade</p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="alert('This form is not available in the frontend-only version.'); return false;"
+                >
+                  Request Replacement <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Instructions Section -->
+          <section id="instructions-section" class="info">
+            <h3>How to Submit a Form</h3>
+            <div class="steps">
+              <div class="step">
+                <div class="step-number">1</div>
+                <h4>Select Form Type</h4>
+                <p>
+                  Choose the appropriate form from the options above that
+                  matches your service request.
+                </p>
+              </div>
+
+              <div class="step">
+                <div class="step-number">2</div>
+                <h4>Fill Out Details</h4>
+                <p>
+                  Complete all required fields with accurate information. Ensure
+                  all details are correct.
+                </p>
+              </div>
+
+              <div class="step">
+                <div class="step-number">3</div>
+                <h4>Submit Request</h4>
+                <p>
+                  Review your information and submit. You'll receive a reference
+                  number for tracking.
+                </p>
+              </div>
+
+              <div class="step">
+                <div class="step-number">4</div>
+                <h4>Track Progress</h4>
+                <p>
+                  Use your reference number to track the status of your request
+                  online anytime.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Stats Section -->
+          <section class="stats">
+            <h3>System Statistics</h3>
+            <p class="section-description">Real-time overview of our service</p>
+
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-number">1,247</div>
+                <div class="stat-label">Forms Submitted</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-number">72</div>
+                <div class="stat-label">Average Processing Hours</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-number">89</div>
+                <div class="stat-label">Active Requests</div>
+              </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px">
+              <p style="color: var(--text-gray); font-size: 15px">
+                <i class="fas fa-info-circle"></i> Need assistance? Contact us
+                at +639173049794 or visit our office in Tunga, Leyte.
+              </p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div
+              class="footer-logo"
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 0.5rem;
+              "
+            >
+              <img
+                src="assets/images/logoL3iii.webp"
+                alt="LEYECO III Logo"
+                style="height: 30px; width: auto"
+              />
+              <h4 style="margin: 0">LEYECO III</h4>
+            </div>
+            <p>Leyte III Electric Cooperative, Inc.</p>
+            <p><i>Lighting Houses, Lighting Homes, Lighting Hopes</i></p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#select-forms">Select Forms</a></li>
+              <li><a href="contact.html#map-section">Find Us</a></li>
+              <li><a href="contact.html#faq-section">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact Information</h4>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Brgy. San Roque, Tunga,
+              Leyte
+            </p>
+            <p><i class="fas fa-phone"></i> SMART: +639285104998</p>
+            <p><i class="fas fa-phone"></i> GLOBE: +639173049794</p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a
+                href="mailto:leyteiiie@yahoo.com"
+                style="color: var(--light-gray)"
+                >leyteiiie@yahoo.com</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-globe"></i>
+              <a
+                href="https://www.leyeco3.com/"
+                target="_blank"
+                style="color: var(--light-gray)"
+                >www.leyeco3.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/page-loader.js"></script>
+    <script src="assets/js/homepage.js"></script>
+  </body>
+</html>

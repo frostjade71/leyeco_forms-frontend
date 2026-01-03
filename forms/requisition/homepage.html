@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisition System - LEYECO III Forms Management System</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/leyecoicon_fav.svg">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <!-- Page Loader Stylesheet -->
+    <link rel="stylesheet" href="../../assets/css/loader.css">
+    
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="homepage.css">
+    
+    <!-- Global Page Loader Script -->
+    <script src="../../assets/js/page-loader.js"></script>
+</head>
+<body>
+    <!-- Page Loader Overlay -->
+    <div id="page-loader">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo/Brand -->
+            <a href="../../index.html" class="navbar-brand">
+                <img src="../../assets/images/logoL3iii.webp" alt="LEYECO III Logo" class="logo-icon">
+                <img src="../../assets/images/logo_leyeco3.webp" alt="LEYECO III" class="logo-text">
+            </a>
+            
+            <!-- Mobile Toggle -->
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <div class="navbar-menu">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="../../index.html">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../about.html">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../contact.html">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-primary" onclick="alert('Staff login is not available in this frontend-only version.'); return false;">
+                            <i class="fas fa-user-lock"></i> Staff Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content Wrapper -->
+    <main class="main-content">
+
+<div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+    <main class="main">
+        <section class="hero">
+            <h2>Requisition System</h2>
+            <p class="hero-desc">Request materials and equipment easily. Submit your requisition, receive a tracking number, and monitor approval progress in real-time through our streamlined 5-level workflow.</p>
+            
+            <div class="hero-actions">
+                <a href="submit_request.html" class="btn btn-primary btn-large">
+                    📝 Submit New Request
+                </a>
+                <a href="#track-request" class="btn btn-secondary btn-large">
+                    🔍 Track Request
+                </a>
+            </div>
+        </section>
+
+        <section class="track-request" id="track-request">
+            <h3>Track Your Request</h3>
+            <p>Enter your RF control number to view the status of your requisition</p>
+            
+            <form onsubmit="alert('Tracking is not available in this frontend-only version.'); return false;" class="search-form">
+                <input 
+                    type="text" 
+                    name="rf" 
+                    placeholder="Enter RF control number (e.g., RF-20251217-0001)" 
+                    required
+                    pattern="RF-\d{8}-\d{4}"
+                    class="search-input"
+                >
+                <button type="submit" class="btn btn-primary">Track Request</button>
+            </form>
+        </section>
+
+        <section class="info">
+            <h3>How It Works</h3>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Submit Request</h4>
+                    <p>Fill out the requisition form with your material requirements. No login required!</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Get RF Number</h4>
+                    <p>Receive a unique RF control number for tracking your request</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Track Progress</h4>
+                    <p>Monitor your request status in real-time using your RF control number</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Approval Process</h4>
+                    <p>Your request goes through a 5-level sequential approval workflow</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="workflow">
+            <h3>5-Level Approval Workflow</h3>
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <div class="workflow-number">1</div>
+                    <div class="workflow-details">
+                        <h4>Noted</h4>
+                        <p>Section Head</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-number">2</div>
+                    <div class="workflow-details">
+                        <h4>Reviewed</h4>
+                        <p>Department Manager</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-number">3</div>
+                    <div class="workflow-details">
+                        <h4>Checked</h4>
+                        <p>Warehouse Supervisor</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-number">4</div>
+                    <div class="workflow-details">
+                        <h4>Recommended</h4>
+                        <p>General Manager</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-number">5</div>
+                    <div class="workflow-details">
+                        <h4>Approved</h4>
+                        <p>Board of Directors</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="important-info">
+            <h3>📌 Important Information</h3>
+            <ul>
+                <li><strong>No Login Required:</strong> Employees can submit and track requests without creating an account.</li>
+                <li><strong>Unique RF Number:</strong> Each request receives a unique control number (Format: RF-YYYYMMDD-XXXX).</li>
+                <li><strong>Sequential Approval:</strong> All 5 levels must approve in order for the request to be completed.</li>
+                <li><strong>Real-time Tracking:</strong> Check your request status anytime using your RF Control Number.</li>
+                <li><strong>Approver Access:</strong> Authorized approvers can login to review and process requests at their level.</li>
+            </ul>
+        </section>
+
+        <section class="stats">
+            <h3>System Statistics</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">156</div>
+                    <div class="stat-label">Total Requests</div>
+                </div>
+                <div class="stat-card stat-pending">
+                    <div class="stat-number">42</div>
+                    <div class="stat-label">Pending Review</div>
+                </div>
+                <div class="stat-card stat-approved">
+                    <div class="stat-number">98</div>
+                    <div class="stat-label">Approved</div>
+                </div>
+                <div class="stat-card stat-rejected">
+                    <div class="stat-number">16</div>
+                    <div class="stat-label">Rejected</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo" style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
+                        <img src="../../assets/images/logoL3iii.webp" alt="LEYECO III Logo" style="height: 30px; width: auto;">
+                        <h4 style="margin: 0;">LEYECO III</h4>
+                    </div>
+                    <p>Leyte III Electric Cooperative, Inc.</p>
+                    <p><i>Lighting Houses, Lighting Homes, Lighting Hopes</i></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../index.html#select-forms">Select Forms</a></li>
+                        <li><a href="../../contact.html#map-section">Find Us</a></li>
+                        <li><a href="../../contact.html#faq-section">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Brgy. San Roque, Tunga, Leyte</p>
+                    <p><i class="fas fa-phone"></i> SMART: +639285104998</p>
+                    <p><i class="fas fa-phone"></i> GLOBE: +639173049794</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:leyteiiie@yahoo.com" style="color: var(--light-gray);">leyteiiie@yahoo.com</a></p>
+                    <p><i class="fas fa-globe"></i> <a href="https://www.leyeco3.com/" target="_blank" style="color: var(--light-gray);">www.leyeco3.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/page-loader.js"></script>
+</body>
+</html>

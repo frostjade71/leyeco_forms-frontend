@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints System - LEYECO III Forms Management System</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/leyecoicon_fav.svg">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <!-- Page Loader Stylesheet -->
+    <link rel="stylesheet" href="../../assets/css/loader.css">
+    
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="homepage.css">
+    
+    <!-- Global Page Loader Script -->
+    <script src="../../assets/js/page-loader.js"></script>
+</head>
+<body>
+    <!-- Page Loader Overlay -->
+    <div id="page-loader">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo/Brand -->
+            <a href="../../index.html" class="navbar-brand">
+                <img src="../../assets/images/logoL3iii.webp" alt="LEYECO III Logo" class="logo-icon">
+                <img src="../../assets/images/logo_leyeco3.webp" alt="LEYECO III" class="logo-text">
+            </a>
+            
+            <!-- Mobile Toggle -->
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <div class="navbar-menu">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="../../index.html">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../about.html">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../contact.html">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-primary" onclick="alert('Staff login is not available in this frontend-only version.'); return false;">
+                            <i class="fas fa-user-lock"></i> Staff Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content Wrapper -->
+    <main class="main-content">
+
+<div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+    <main class="main">
+        <section class="hero">
+            <h2>File a Complaint</h2>
+            <p>We value your feedback. Report service issues, billing concerns, or any complaints to help us serve you better.</p>
+            
+            <div class="hero-actions">
+                <a href="submit_complaint.html" class="btn btn-primary btn-large">
+                    📝 Submit New Complaint
+                </a>
+                <a href="#view-complaint" class="btn btn-secondary btn-large">
+                    🔍 Track Your Complaint
+                </a>
+            </div>
+        </section>
+
+        <section class="view-complaint" id="view-complaint">
+            <h3>Track Your Complaint</h3>
+            <p>Enter your reference code to view the status of your complaint</p>
+            
+            <form onsubmit="alert('Tracking is not available in this frontend-only version.'); return false;" class="search-form">
+                <input 
+                    type="text" 
+                    name="ref" 
+                    placeholder="Enter reference code (e.g., CLN20251211-0001)" 
+                    required
+                    pattern="CLN\d{8}-\d{4}"
+                    class="search-input"
+                >
+                <button type="submit" class="btn btn-primary">View Complaint</button>
+            </form>
+        </section>
+
+        <section class="info">
+            <h3>How It Works</h3>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Submit Complaint</h4>
+                    <p>Fill out the form with details about your complaint</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Get Reference Code</h4>
+                    <p>Receive a unique tracking code for your complaint</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Track Progress</h4>
+                    <p>Use your code to check the status anytime</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Issue Resolved</h4>
+                    <p>Our team works to resolve your complaint quickly</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <h3>System Statistics</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">342</div>
+                    <div class="stat-label">Total Complaints</div>
+                </div>
+                <div class="stat-card stat-new">
+                    <div class="stat-number">28</div>
+                    <div class="stat-label">New Complaints</div>
+                </div>
+                <div class="stat-card stat-investigating">
+                    <div class="stat-number">45</div>
+                    <div class="stat-label">Under Investigation</div>
+                </div>
+                <div class="stat-card stat-resolved">
+                    <div class="stat-number">269</div>
+                    <div class="stat-label">Resolved</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo" style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
+                        <img src="../../assets/images/logoL3iii.webp" alt="LEYECO III Logo" style="height: 30px; width: auto;">
+                        <h4 style="margin: 0;">LEYECO III</h4>
+                    </div>
+                    <p>Leyte III Electric Cooperative, Inc.</p>
+                    <p><i>Lighting Houses, Lighting Homes, Lighting Hopes</i></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../index.html#select-forms">Select Forms</a></li>
+                        <li><a href="../../contact.html#map-section">Find Us</a></li>
+                        <li><a href="../../contact.html#faq-section">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Brgy. San Roque, Tunga, Leyte</p>
+                    <p><i class="fas fa-phone"></i> SMART: +639285104998</p>
+                    <p><i class="fas fa-phone"></i> GLOBE: +639173049794</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:leyteiiie@yahoo.com" style="color: var(--light-gray);">leyteiiie@yahoo.com</a></p>
+                    <p><i class="fas fa-globe"></i> <a href="https://www.leyeco3.com/" target="_blank" style="color: var(--light-gray);">www.leyeco3.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/page-loader.js"></script>
+</body>
+</html>
