@@ -23,7 +23,7 @@ This frontend-only version was created to:
 
 1. Open `index.html` in a web browser
 2. Navigate through the pages using the menu
-3. Explore the form homepages for Complaints and Requisition systems
+3. Explore the form homepages for Complaints System and others
 
 ## 📸 Screenshots
 
@@ -31,11 +31,11 @@ This frontend-only version was created to:
 
 ### Homepage
 
-![Homepage Screenshot](assets/images/Screenshot%202026-01-03%20164104.png)
+![Homepage Screenshot](docs\web-screenshot-18-01-2026.png)
 
 ### Forms Selection
 
-![Forms Selection Screenshot](assets/images/Screenshot%202026-01-03%20164153.png)
+![Forms Selection Screenshot](docs\forms.png)
 
 </div>
 
