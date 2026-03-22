@@ -1,13 +1,14 @@
 <div align="center">
 
-# <img src="assets/images/logoL3iii.webp" alt="LEYECO III Logo" height="50" style="vertical-align: middle; margin-bottom: 5px;"> **LEYECO III FORMS MANAGEMENT SYSTEM**
+# <img src="assets/images/logoL3iii.webp" alt="LEYECO III Logo" width="120" style="border-radius: 20px;">
+# LEYECO III Forms Management System
 
-[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
-[![PHP Version](https://img.shields.io/badge/PHP-8.2%2B-blue.svg)](https://php.net/)
-[![Docker](https://img.shields.io/badge/Docker-✓-blue.svg)](https://www.docker.com/)
-[![MySQL](https://img.shields.io/badge/MySQL-8.0+-blue.svg)](https://www.mysql.com/)
+[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
+[![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-A comprehensive web-based forms and operations management system developed by Computer Science Seniors at Holy Cross College of Carigara Incorporated for LEYECO III (Leyte III Electric Cooperative), enabling efficient online submission, tracking, and management of complaints, meter replacements, and requisition forms.
+A comprehensive web-based forms and operations management system developed by Computer Science Interns at Holy Cross College of Carigara Incorporated for Leyte III Electric Cooperative Inc. (LEYECO III), enabling efficient online submission, tracking, and management of complaints, meter replacements, and requisition forms.
 
 </div>
 
@@ -15,8 +16,8 @@ A comprehensive web-based forms and operations management system developed by Co
 
 <table>
   <tr>
-    <td><img src="docs\web-screenshot-18-01-2026.png" alt="Public Homepage - Main Interface" width="400"/></td>
-    <td><img src="docs\web-screenshot-18-01-2026 (1).png" alt="Homepage - Form Selection Cards" width="400"/></td>
+    <td><img src="docs\frontpage.png" alt="Public Homepage - Main Interface" width="400"/></td>
+    <td><img src="docs\forms.png" alt="Homepage - Form Selection Cards" width="400"/></td>
   </tr>
   <tr>
     <td align="center"><b>Public Homepage - Main Interface</b></td>
@@ -256,22 +257,6 @@ Powered by PHPMailer with comprehensive email templates:
 - **Visual Analytics**: Charts and graphs for data visualization
 - **Activity Reports**: Staff performance and system usage reports
 
-## Quick Start
-
-### <img src="https://skillicons.dev/icons?i=docker" height="30" style="vertical-align: middle;"> With Docker (Recommended) \*Private Repo need permission
-
-```bash
-git clone https://github.com/frostjade71/leyeco_form_sys.git
-cd leyeco_form_sys
-docker-compose up -d
-```
-
-Access the application:
-
-- **Public Homepage**: http://localhost:8080
-- **Staff Portal**: http://localhost:8080/staff/login.php
-- **phpMyAdmin**: http://localhost:8081
-
 ## Technology Stack
 
 <p align="center">
@@ -282,12 +267,12 @@ Access the application:
 
 ## Development Roadmap
 
-### 🚧 Future Plans or i dunno
+### 🚧 Future Plans
 
 - Service request form (New connections)
 - Reconnection request form
 
-## License
+## ©️License
 
 This project is licensed under a **Proprietary License** exclusively for **LEYECO III (Leyte III Electric Cooperative)**.
 
@@ -301,7 +286,7 @@ See the [LICENSE](LICENSE) file for complete details.
 
 ---
 
-## **Credits** <img src="assets/images/HCCCI.webp" alt="HCCCI Logo" height="24" style="vertical-align: middle;"> HCCCI Computer Science Seniors
+## **Credits** <img src="assets/images/HCCCI.webp" alt="HCCCI Logo" height="24" style="vertical-align: middle;"> HCCCI Computer Science Interns
 
 > #### Documentation & QA/Testers:
 
